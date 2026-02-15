@@ -1,37 +1,29 @@
 {
   "name": "curation-library",
+  "version": "0.1.0",
   "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
   "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
-    "@sanity/vision": "^5.9.0",
-    "react": "^19.1",
-    "react-dom": "^19.1",
-    "sanity": "^5.9.0",
-    "styled-components": "^6.1.18"
+    "axios": "^1.13.5",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "swr": "^2.4.0",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^6.0.0",
-    "@types/react": "^19.1",
-    "eslint": "^9.28",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
-  },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
