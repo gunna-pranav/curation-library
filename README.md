@@ -1,30 +1,9 @@
-# Curation Library
+# Sanity Clean Content Studio
 
-A personal platform for capturing, organizing, and showcasing curated items.
+Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
-## Problem
+Now you can do the following things:
 
-10-15 minutes per item to manually organize and save curated finds.
-
-## Solution
-
-Paste URL → auto-scrape metadata + images → organize in beautiful library → share public gallery. 5-7 minutes per item.
-
-## Tech Stack
-
-- Next.js + React
-- Tailwind CSS
-- Sanity CMS
-- Vercel
-
-## Getting Started
-```bash
-git clone git@github.com:gunna-pranav/curation-library.git
-cd curation-library
-npm install
-npm run dev
-```
-
-## License
-
-MIT
+- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
+- [Join the Sanity community](https://www.sanity.io/community/join?utm_source=readme)
+- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
