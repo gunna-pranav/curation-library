@@ -8,7 +8,7 @@ const apiToken = process.env.SANITY_API_TOKEN
 export const client = createClient({
   projectId,
   dataset,
-  useCdn: false,
+  useCdn: process.env.NODE_ENV === 'production',
   apiVersion: '2024-02-16',
   token: apiToken,
 })
