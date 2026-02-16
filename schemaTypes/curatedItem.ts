@@ -39,7 +39,7 @@ export default {
     },
     {
       name: 'images',
-      title: 'Images',
+      title: 'All Product Images',
       type: 'array',
       of: [
         {
@@ -56,7 +56,18 @@ export default {
           ],
         },
       ],
+      description: 'Select your favorite 5-6 product images. One will be designated as the thumbnail.',
       validation: (Rule: any) => Rule.required().min(1),
+    },
+    {
+      name: 'thumbnailImage',
+      title: 'Thumbnail Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      description: 'This image will be displayed in the library grid. Pick your favorite.',
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'yourNote',
