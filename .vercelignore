@@ -1,0 +1,8 @@
+.env.local
+.env.*.local
+.git
+.gitignore
+.vercel
+schemaTypes/
+sanity.config.ts
+sanity.cli.config.ts
