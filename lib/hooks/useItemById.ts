@@ -56,16 +56,16 @@ async function fetchItemById(id: string) {
 }
 
 export function useItemById(id: string | null) {
-  const { data, error, isLoading, mutate } = useSWR<CuratedItem>(
+  const { data, error, isLoading, mutate } = useSWR(
     id ? `item-${id}` : null,
-    () => id && fetchItemById(id),
+    id ? () => fetchItemById(id) : null,
     {
       revalidateOnFocus: false,
     }
   )
 
   return {
-    item: data || null,
+    item: (data as CuratedItem | undefined) || null,
     error,
     isLoading,
     mutate,
